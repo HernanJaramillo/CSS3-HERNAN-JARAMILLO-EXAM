@@ -1,0 +1,426 @@
+
+@font-face{
+font-family:'Dancing script', cursive;
+
+}
+
+
+body{
+
+	background: #f2f2f2;
+	color: black;
+	margin:0px 200px;
+	width: 900px;
+	/*border:solid 2px white;*/
+	background-color: black;
+
+}
+/*------------cabecera-----------------------------------*/
+header{
+	width:auto;
+		/*border:solid 2px white;*/
+		background: #5b7989;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	  animation-duration: 3s;
+  	animation-name: slidein;
+		animation-direction: alternate;
+
+}
+.contenedor h1{
+	padding-left: 20px;
+	order: 1;
+	flex-grow: 2;
+	text-align: left;
+	text-shadow: 1px 2px #02010a;
+	color: white;
+	font-family: 'Dancing Script',cursive;
+  font-size: 30px;
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	align-items: center;
+}
+.contenedor nav{
+	order: 2;
+flex-grow: 2;
+flex-basis: 40%
+}
+
+.menu-principal ul{
+
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.menu-principal li{
+  float:right;
+  display: block;
+  margin: 0px 5px;
+  padding: 15px 0px;
+  height: 100%;
+
+}
+
+.menu-principal a{
+	font-family: 'Dancing Script',cursive;
+	font-size: 24px;
+	text-shadow: 1px 2px #02010a;
+	color:white;
+}
+
+
+body#cuerpo nav.menu-principal li:nth-child(3) a,
+body#cuerporetratos nav.menu-principal li:nth-child(1) a,
+body#cuerpopaisajes nav.menu-principal li:nth-child(2) a {
+	text-decoration: none;
+}
+/*-----------Fin Cabecera-------------*/
+
+
+/*------------------------Cuerpo pagina principal----------------------*/
+.contenedorCuerpo{
+	width: auto;
+	/*border:solid 2px red;*/
+}
+.central
+{
+	box-sizing: border-box;
+	background-color: grey;
+	padding: 2%;
+	text-align:center;
+	width: 100%;
+	/*border:solid 2px green;*/
+
+}
+.central2
+{
+	display: flex;
+		flex-flow: row wrap;
+		text-align:center;
+		width: auto;
+		/*border:solid 2px green;*/
+		background-color: #d5c75f;
+
+}
+.imagen1{
+	width: 100%;
+}
+.imagen2{
+	width: 50%
+}
+.imagen3{
+	width: 50%
+}
+#imagen1 img{
+	width:100%;
+	height: 20%;
+	border: 1px;
+	border-color: black;
+}
+
+#imagen2 img{
+	width:90%;
+	height: 80%;
+	border: solid 1px black;
+	transition-property: border;
+	transition-duration: 0.5s;
+}
+
+#imagen2 img:hover{
+	transform: rotate(10deg);
+	border: solid 2px black;
+	drop-shadow:5px 5px 5px #82c3a6;
+}
+
+#imagen3 img{
+	width:90%;
+	height: 70%;
+	transition-property: border;
+	transition-duration: 0.5s;
+}
+
+#imagen3 img:hover{
+	transform: rotate(10deg);
+	border: solid 2px black;
+	drop-shadow:#82c3a6;
+	transform: translate(20px,5px);
+}
+.central2 figcaption{
+	font-family: 'Dancing Script',cursive;
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+/*-----------Cuerpo Pagina Paisajes---------------*/
+section{
+	background-color: #d5c75f;
+}
+.contenedorpaisaje{
+	display: flex;
+  flex-direction: row wrap;
+}
+.contenedorpaisaje figure{
+	text-align: center;
+	padding: 10px;
+    margin: 10px;
+    width: 33%;
+}
+.contenedorpaisaje img{
+	border: solid 2px black;
+}
+
+#imagenpaisaje1 img{
+	-moz-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-webkit-filter: blur(10px);
+  filter:blur(10px);
+}
+
+#imagenpaisaje2, #imagenpaisaje4, #imagenpaisaje6 img{
+	-ms-filter: grayscale(100%);
+	-webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+#imagenpaisaje3 img{
+	webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+
+/*-----------------------Cuerpo Pagina Retratos-----*/
+.contenedorretrato{
+	display: flex;
+  flex-direction: row wrap;
+}
+.contenedorretrato figure{
+	text-align: center;
+	padding: 10px;
+    margin: 10px;
+    width: 33%;
+}
+.contenedorretrato img{
+	border: solid 2px black;
+}
+
+#imagenretrato1 img{
+	-moz-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-webkit-filter: blur(10px);
+  filter:blur(10px);
+}
+
+#imagenretrato2, #imagenretrato4, #imagenretrato6 img{
+	-ms-filter: grayscale(100%);
+	-webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+#imagenretrato3 img{
+	-webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+
+/*-------------------Pie de Pagina-------------------*/
+.contenedorInfo div {
+  box-sizing: border-box;
+
+}
+.contenedorInfo img{
+		width: 8%;
+}
+
+.contenedorInfo{
+	width: 100%;
+	/*border:solid 2px pink;*/
+	display: flex;
+	flex-flow: row wrap;
+	background-color:  #C6d5c5;
+
+}
+.contenedorInfo h2{
+	font-family: 'Dancing script ',cursive;
+	-webkit-font-family: Dancing Script,cursive;
+	font-size: 14px;
+}
+.Piedepagina{
+	width:auto;
+		/*border:solid 2px blue;*/
+}
+.C1{
+	font-family: 'Dancing script ',bold;
+	font-size: 30px;
+	width:25%;
+	/*border:solid 2px yellow;*/
+}
+
+.C2{
+	font-family: 'Dancing script ',bold;
+	font-size: 28px;
+	width:25%;
+	/*border:solid 2px red;*/
+}
+
+.C3{
+	font-family: 'Dancing script ',bold;
+	font-size: 28px;
+	width:25%;
+	/*border:solid 2px purple;*/
+}
+.C4{
+	font-family: 'Dancing script ',bold;
+	font-size: 28px;
+	width:25%;
+	/*border:solid 2px orange;*/
+}
+
+/*Para Desptok*/
+
+/*@media  (max-width: 900px){
+
+	#cuerpo
+	{
+		width: auto;
+margin: 0 auto;
+}
+.C1 {
+		width: 100%;
+		order: 1;
+	}
+
+	.C2 {
+		width: 100%;
+		order: 2;
+	}
+	.C3 {
+		width: 100%;
+		order: 3;
+	}
+	.C4 {
+		width: 100%;
+		order: 4;
+	}
+}
+
+
+
+
+/*--------para Movil-------------*/
+
+
+@media (min-width:10px) and (max-width: 480px){
+
+#cuerpo, #cuerpopaisajes,
+#cuerporetratos
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.C1 {
+			width: 100%;
+			order: 1;
+
+		}
+
+		.C2 {
+			width: 100%;
+			order: 2;
+		}
+		.C3 {
+			width:100%;
+			order: 3;
+		}
+		.C4 {
+			width: 100%;
+			order: 4;
+		}
+
+	.contenedor h1{
+		padding-left: 20px;
+		order: 1;
+		flex-grow: 2;
+		text-align: center;
+		text-shadow: 1px 2px #02010a;
+		color: white;
+		font-family: Dancing Script,cursive;
+		-webkit-font-family:Dancing Script, cursive;
+
+	  font-size: 34px;
+	}
+	.menu-principal ul{
+		align-items: center;
+		align-content: center;
+	  list-style-type: none;
+	  margin: 0;
+		}
+	.contenedorInfo h2{
+
+		font-size: 10px;
+	}
+
+	.imagen1 {
+		width: 100%;
+	}
+	.imagen2{
+		width: 100%;
+		order: 1;
+	}
+	.imagen3{
+		width: 100%;
+		order: 2;
+	}
+/* Pagina Paisajes*/
+.contenedorpaisaje{
+	display: flex;
+  flex-direction: column;
+}
+.contenedorpaisaje figure{
+	/*text-align: center;
+	padding: 10px;
+    /*margin: 10px;*/
+    width: auto;
+		margin: 0 auto;
+}
+.contenedorretrato{
+	display: flex;
+  flex-direction: column;
+}
+.contenedorretrato figure{
+	/*text-align: center;
+	padding: 10px;
+    /*margin: 10px;*/
+    width: auto;
+		margin: 0 auto;
+}
+
+
+
+}
+/*----------Animacion----------*/
+@keyframes slidein{
+0%{
+	margin-top: 150%;
+}
+60%{
+	margin-top: -5%;
+}
+100%{
+	margin-top: 0%;
+}
+}
+@-webkit-keyframes slidein{
+0%{
+	margin-top: 150%;
+}
+60%{
+	margin-top: -5%;
+}
+100%{
+	margin-top: 0%;
+}
+}
